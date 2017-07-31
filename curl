@@ -1,0 +1,9 @@
+curl http://localhost:4040/api/health-check
+curl http://localhost:4040/api/users
+curl http://localhost:4040/api/users -H "Content-Type: application/json" -X POST -d '{"username":"yong","mobileNumber":"1587315765"}'
+curl http://localhost:4040/api/users/597ee0327a2b6ad34e65c3d5
+curl http://localhost:4040/api/users/597ee0327a2b6ad34e65c3d5 -H "Content-Type: application/json" -X PUT -d '{"username":"勇勇","mobileNumber":"1687315765"}'
+curl http://localhost:4040/api/users/597ee0327a2b6ad34e65c3d5 -X DELETE
+
+curl http://localhost:4040/api/auth/login  -H "Content-Type: application/json" -X POST -d '{"username":"react","password":"express"}'
+curl http://localhost:4040/api/auth/random-number -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJlYWN0IiwiaWF0IjoxNTAxNDg4MzIxfQ.jm_WHECAoNIdLrV9x9TO1a2R3M1QDzlxcdWYhLzRNdw"
